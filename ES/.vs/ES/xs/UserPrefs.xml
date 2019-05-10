@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{2EE7835E-8CF3-6927-DED0-B60CFDA51FD4}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/NewSurfaceShader.shader">
+    <Files>
+      <File FileName="../expanding space/Assets/Scripts/movement.cs" Line="11" Column="24" />
+      <File FileName="Assets/Scripts/button.cs" Line="17" Column="6" />
+      <File FileName="Assets/Scripts/door.cs" Line="14" Column="6" />
+      <File FileName="Assets/Scripts/enemymovement.cs" Line="45" Column="10" />
+      <File FileName="../../../../../../Downloads/New Unity Project/Assets/scripts/enemy.cs" Line="11" Column="53" />
+      <File FileName="Assets/Scripts/movement.cs" Line="21" Column="28" />
+      <File FileName="Assets/Scripts/NewSurfaceShader.shader" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
