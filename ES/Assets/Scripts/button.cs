@@ -8,18 +8,19 @@ public class button : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player" || other.tag =="heavy")
+        if(other.tag == "Player" || other.tag =="heavy" || other.tag == "Rock")
         {
 
             active = true;
         }
        
     }
+   
     private void OnTriggerExit2D(Collider2D other)
     {
 
 
-        if (other.tag == "Player" || other.tag == "heavy") { 
+        if (other.tag == "Player" || other.tag == "heavy" || other.tag == "Rock") { 
 
         active = false;
         }

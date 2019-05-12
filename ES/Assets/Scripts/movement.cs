@@ -13,12 +13,16 @@ public class movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+   
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(lighton);
+        //track welke kant player op kijkt. kan later gebruikt worden voor animations
+       
+
+        //set lights aan of uit.
         if (lighton == false)
         {
             if (Input.GetKeyDown(KeyCode.E))
@@ -30,12 +34,14 @@ public class movement : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                lighton = false;
+                lighton = false;    
             }
         }
     }
+  
     private void FixedUpdate()
     {
+        //movement
         moveInputx = Input.GetAxis("Horizontal");
         moveInputy = Input.GetAxis("Vertical");
         rb.velocity = new Vector2(moveInputy * speed, rb.velocity.y);

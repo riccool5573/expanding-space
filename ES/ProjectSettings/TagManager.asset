@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - heavy
+  - firefly
   layers:
   - Default
   - TransparentFX
