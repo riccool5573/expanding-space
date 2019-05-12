@@ -6,6 +6,7 @@ TagManager:
   tags:
   - heavy
   - firefly
+  - Rock
   layers:
   - Default
   - TransparentFX
