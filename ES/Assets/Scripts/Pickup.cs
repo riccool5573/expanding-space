@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    private int amountoffireflies;
+    public int amountoffireflies;
     private string facing;
     public Transform firefly;
     private double firetimer;
@@ -13,10 +13,14 @@ public class Pickup : MonoBehaviour
     public Transform Rock;
     private double rocktimer;
     private bool rocktimeron;
+    private GameObject Holder;
     // Start is called before the first frame update
     void Start()
     {
-        amountoffireflies = 0;
+     
+        Holder = GameObject.Find("Holder");
+        holder cs = Holder.GetComponent<holder>();
+        amountoffireflies = cs.fireflies;
     }
     private void OnCollisionStay2D(Collision2D other)
     {
