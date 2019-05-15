@@ -18,8 +18,38 @@ public class Pickup : MonoBehaviour
     {
         amountoffireflies = 0;
     }
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.rigidbody)
+        {
+            if (other.rigidbody.tag == "Rock" && rocktimer <= 0)
+            {
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    hasrock = true;
+                    rocktimer = 0.5;
+                    rocktimeron = true;
+                    Debug.Log("got here");
+                    Destroy(other.gameObject);
+                }
+            }
+            if (other.rigidbody.tag == "firefly" && firetimer <= 0)
+            {
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    amountoffireflies++;
+                    firetimer = 0.5;
+                    timeron = true;
+                    Destroy(other.gameObject);
+                   
+                }
+            }
+        }
+
+    }
     private void Update()
     {
+        Debug.Log(rocktimer);
        
         //rocktimer en rocktimeron is om ervoor te zorgen dat het object niet meteen weer word neergezet het moment dat het word opgepakt
         if (rocktimeron)
@@ -54,7 +84,7 @@ public class Pickup : MonoBehaviour
         {
             facing = "Down";
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))   
         {
             if (amountoffireflies > 0)
             {
