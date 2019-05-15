@@ -107,27 +107,5 @@ public class Pickup : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay2D(Collision2D other)
-    {
-        if (other.rigidbody)
-        {
-            if (other.rigidbody.tag == "Rock" && Input.GetKeyDown(KeyCode.R) && hasrock == false){
-                hasrock = true;
-                Destroy(other.gameObject);
-                rocktimer = 0.5;
-                rocktimeron = true;
-            }
-            if (other.rigidbody.tag == "firefly" && Input.GetKeyDown(KeyCode.F))
-            {
-                if (firetimer <= 0)
-                {
-                    amountoffireflies += 1;
-                    Debug.Log("got here");
-                    Destroy(other.gameObject);
-                    firetimer = 0.5;
-                    timeron = true;
-                }
-            }
-        }
-    }
+  
 }
