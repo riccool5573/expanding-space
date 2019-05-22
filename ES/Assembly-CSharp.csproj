@@ -66,9 +66,13 @@
     <Compile Include="Assets\Scripts\door.cs" />
     <Compile Include="Assets\Scripts\enemymovement.cs" />
     <Compile Include="Assets\Scripts\holder.cs" />
+    <Compile Include="Assets\Scripts\LightButton.cs" />
+    <Compile Include="Assets\Scripts\LightDoor.cs" />
+    <Compile Include="Assets\Scripts\lightpuzzle.cs" />
     <Compile Include="Assets\Scripts\movement.cs" />
     <Compile Include="Assets\Scripts\nexlevel.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
+    <Compile Include="Assets\Scripts\spritemask.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/student/Documents/media.college/bewijzenmap/periode1.4/IDP/expanding-space/ES/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

@@ -17,7 +17,7 @@ public class Pickup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-     
+        
         Holder = GameObject.Find("Holder");
         holder cs = Holder.GetComponent<holder>();
         amountoffireflies = cs.fireflies;
@@ -33,7 +33,6 @@ public class Pickup : MonoBehaviour
                     hasrock = true;
                     rocktimer = 0.5;
                     rocktimeron = true;
-                    Debug.Log("got here");
                     Destroy(other.gameObject);
                 }
             }
@@ -53,7 +52,6 @@ public class Pickup : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(rocktimer);
        
         //rocktimer en rocktimeron is om ervoor te zorgen dat het object niet meteen weer word neergezet het moment dat het word opgepakt
         if (rocktimeron)

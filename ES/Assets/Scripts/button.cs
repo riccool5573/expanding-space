@@ -6,9 +6,9 @@ public class button : MonoBehaviour
 {
     public bool active = false;
     // Start is called before the first frame update
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
-        if(other.tag == "Player" || other.tag =="heavy" || other.tag == "Rock")
+        if(other.tag == "Light")
         {
 
             active = true;
@@ -20,7 +20,7 @@ public class button : MonoBehaviour
     {
 
 
-        if (other.tag == "Player" || other.tag == "heavy" || other.tag == "Rock") { 
+        if (other.tag == "Light") { 
 
         active = false;
         }

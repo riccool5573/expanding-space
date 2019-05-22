@@ -99,7 +99,10 @@ public class enemymovement : MonoBehaviour
         { 
         if (other.rigidbody.tag == "firefly")
             {
+                if (!lighton)
+                {
                     Destroy(other.gameObject);
+                }
                    
                
             }
