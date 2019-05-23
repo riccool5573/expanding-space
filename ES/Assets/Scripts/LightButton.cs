@@ -6,19 +6,19 @@ public class LightButton : MonoBehaviour
 {
     // Start is called before the first frame update
     public bool active = false;
-    // Start is called before the first frame update
-    void OnTriggerStay2D(Collider2D other)
+    // Start is called before the first frame update   
+    private void OnCollisionStay2D(Collision2D other)
     {
-        if (other.tag == "Light")
+        if (other.collider)
         {
-
-            active = true;
-            Debug.Log("got here");
+            if (other.collider.tag == "Light")
+            {
+                active = true;
+            }
         }
-
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnCollisionExit2D(Collider2D other)
     {
 
 

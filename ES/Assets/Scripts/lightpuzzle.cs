@@ -8,16 +8,24 @@ public class lightpuzzle : MonoBehaviour
     private bool south;
     private bool east;
     private bool west;
+    private bool exists;
+    private TrailRenderer tr;
     // Start is called before the first frame update
     void Start()
     {
         east = true;
+
+        tr = GetComponent<TrailRenderer>();
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        GameObject go = GameObject.Find("Altar");
+        Altar cs = go.GetComponent<Altar>();
+        exists = cs.on;
         if (north)
         {
             transform.localPosition += new Vector3(0, 0.2f, 0);
@@ -33,6 +41,11 @@ public class lightpuzzle : MonoBehaviour
         if (west)
         {
             transform.localPosition += new Vector3(-0.2f, 0, 0);
+        }
+        if(exists == false)
+        {
+            Destroy(this);
+            tr.Clear();
         }
     }
     private void OnCollisionStay2D(Collision2D other)

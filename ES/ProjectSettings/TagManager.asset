@@ -12,6 +12,8 @@ TagManager:
   - East
   - South
   - West
+  - LightButton
+  - Light
   layers:
   - Default
   - TransparentFX

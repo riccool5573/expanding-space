@@ -296,13 +296,17 @@
 /define:ENABLE_VSTU
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
+"Assets/Scripts/Altar.cs"
 "Assets/Scripts/button.cs"
 "Assets/Scripts/door.cs"
 "Assets/Scripts/enemymovement.cs"
 "Assets/Scripts/holder.cs"
 "Assets/Scripts/LightButton.cs"
+"Assets/Scripts/LightDoor.cs"
 "Assets/Scripts/lightpuzzle.cs"
 "Assets/Scripts/movement.cs"
 "Assets/Scripts/nexlevel.cs"
 "Assets/Scripts/Pickup.cs"
+"Assets/Scripts/QuitGame.cs"
 "Assets/Scripts/spritemask.cs"
+"Assets/Scripts/StartGame.cs"
