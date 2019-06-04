@@ -13,6 +13,7 @@ public class Pickup : MonoBehaviour
     public Transform Rock;
     private double rocktimer;
     private bool rocktimeron;
+    Animator animator;
     private GameObject Holder;
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,7 @@ public class Pickup : MonoBehaviour
         Holder = GameObject.Find("Holder");
         holder cs = Holder.GetComponent<holder>();
         amountoffireflies = cs.fireflies;
+        animator = GetComponent<Animator>();
     }
     private void OnCollisionStay2D(Collision2D other)
     {
@@ -70,21 +72,50 @@ public class Pickup : MonoBehaviour
         {
             timeron = false;
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.W))
+        {
+            looking();
+        }
+
+      
+        if (Input.GetKey(KeyCode.A))
         {
             facing = "Left";
+            animator.SetBool("left", true);
+            animator.SetBool("right", false);
+            animator.SetBool("up", false);
+            animator.SetBool("down", false);
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             facing = "Right";
+            animator.SetBool("left", false);
+            animator.SetBool("right", true);
+            animator.SetBool("up", false);
+            animator.SetBool("down", false);
         }
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             facing = "Up";
+            animator.SetBool("left", false);
+            animator.SetBool("right", false);
+            animator.SetBool("up", true);
+            animator.SetBool("down", false);
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             facing = "Down";
+            animator.SetBool("left", false);
+            animator.SetBool("right", false);
+            animator.SetBool("up", false);
+            animator.SetBool("down", true);
+        }
+        if(Input.anyKey == false)
+        {
+            animator.SetBool("left", false);
+            animator.SetBool("right", false);
+            animator.SetBool("up", false);
+            animator.SetBool("down", false);
         }
         if (Input.GetKeyDown(KeyCode.Space))   
         {
@@ -139,5 +170,48 @@ public class Pickup : MonoBehaviour
         }
     }
 
-  
+
+    public void looking()
+    {
+        if (Input.GetKey(KeyCode.A))
+        {
+            facing = "Left";
+            animator.SetBool("left", true);
+            animator.SetBool("right", false);
+            animator.SetBool("up", false);
+            animator.SetBool("down", false);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            facing = "Right";
+            animator.SetBool("left", false);
+            animator.SetBool("right", true);
+            animator.SetBool("up", false);
+            animator.SetBool("down", false);
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            facing = "Up";
+            animator.SetBool("left", false);
+            animator.SetBool("right", false);
+            animator.SetBool("up", true);
+            animator.SetBool("down", false);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            facing = "Down";
+            animator.SetBool("left", false);
+            animator.SetBool("right", false);
+            animator.SetBool("up", false);
+            animator.SetBool("down", true);
+        }
+        if (Input.anyKey == false)
+        {
+            animator.SetBool("left", false);
+            animator.SetBool("right", false);
+            animator.SetBool("up", false);
+            animator.SetBool("down", false);
+        }
+    }
+
 }

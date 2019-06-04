@@ -1,11 +1,7 @@
 ﻿<Properties StartupConfiguration="{2EE7835E-8CF3-6927-DED0-B60CFDA51FD4}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/mirror.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../Scripting/animation\/script.js">
     <Files>
-      <File FileName="Assets/Scripts/StartGame.cs" Line="16" Column="6" />
-      <File FileName="Assets/Scripts/nexlevel.cs" Line="4" Column="1" />
-      <File FileName="Assets/Scripts/QuitGame.cs" Line="12" Column="35" />
-      <File FileName="Assets/Scripts/Pickup.cs" Line="22" Column="1" />
-      <File FileName="Assets/Scripts/mirror.cs" Line="14" Column="48" />
+      <File FileName="../../../Scripting/animation\/script.js" Line="8" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1985950268593409584}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.06, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 6599378114874343542}
   m_RootOrder: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 6599378114874343531}
   - component: {fileID: 6599378114874343530}
   m_Layer: 0
-  m_Name: fireflies (1)
+  m_Name: fireflies
   m_TagString: firefly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,8 +150,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bea22d1348f844d0d9b519ce6ac92233, type: 3}
-  m_Color: {r: 1, g: 0.78632927, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 17927d6ae263c4d118a0c98ca5055ef6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -178,7 +178,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.9, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -212,7 +212,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!60 &6599378114874343530
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -230,7 +230,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.9, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

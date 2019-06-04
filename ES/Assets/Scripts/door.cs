@@ -5,11 +5,14 @@ using UnityEngine;
 public class door : MonoBehaviour
 {
     public bool open;
+    public Sprite opendoor;
+    public Sprite closeddoor;
+    private SpriteRenderer spriteR;
     // Start is called before the first frame update
     void Start()
     {
 
-       
+        spriteR = gameObject.GetComponent<SpriteRenderer>();
 
     }
 
@@ -24,15 +27,21 @@ public class door : MonoBehaviour
         if (open == true)
         {
 
-            GetComponent<SpriteRenderer>().enabled = false;
+            spriteR.sprite = opendoor; 
 
             GetComponent<BoxCollider2D>().enabled = false;
-        }
-        else if(open == false)
-        {
-            GetComponent<SpriteRenderer>().enabled = true;
+            transform.position = new Vector3(transform.position.x,  11.74f , transform.position.z);
 
+        }
+        if (open == false)
+        {
+
+            spriteR.sprite = closeddoor;
+       
             GetComponent<BoxCollider2D>().enabled = true;
+            transform.position = new Vector3(transform.position.x, 13.39f, transform.position.z);
         }
     }
-}
+    }
+
+

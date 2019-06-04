@@ -20,9 +20,9 @@ public class spritemask : MonoBehaviour
         movement go = player.GetComponent<movement>();
         big = go.lighton;
         if (big)
-        Spritemask.localScale = new Vector3(8, 8, 0);
+        Spritemask.localScale = new Vector3(10, 10, 0);
         else
-        Spritemask.localScale = new Vector3(3, 3, 0);
+        Spritemask.localScale = new Vector3(5, 5, 0);
             
     }
 }

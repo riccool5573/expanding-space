@@ -64,6 +64,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Altar.cs" />
     <Compile Include="Assets\Scripts\button.cs" />
+    <Compile Include="Assets\Scripts\camera.cs" />
+    <Compile Include="Assets\Scripts\cameraY.cs" />
     <Compile Include="Assets\Scripts\door.cs" />
     <Compile Include="Assets\Scripts\enemymovement.cs" />
     <Compile Include="Assets\Scripts\holder.cs" />
@@ -75,6 +77,7 @@
     <Compile Include="Assets\Scripts\nexlevel.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\QuitGame.cs" />
+    <Compile Include="Assets\Scripts\ScreenShake.cs" />
     <Compile Include="Assets\Scripts\spritemask.cs" />
     <Compile Include="Assets\Scripts\StartGame.cs" />
     <Reference Include="Unity.Timeline.Editor">
