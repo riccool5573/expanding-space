@@ -6,14 +6,18 @@ public class mirror : MonoBehaviour
 {
     bool timeron;
     float timer;
+    int i = 0;
+    public string[] NESW = { "North","East","South","West" };
     // Start is called before the first frame update
     void Start()
     {
         timer = 0.5f;
+
     }
 
     private void Update()
     {
+      
         if (timeron)
         {
             timer -= Time.deltaTime;
@@ -21,7 +25,7 @@ public class mirror : MonoBehaviour
         if (timer <= 0)
         {
             timeron = false;
-            timer = 0.5f;
+            timer = 1.0f;
         }
     }
     // Update is called once per frame
@@ -29,24 +33,15 @@ public class mirror : MonoBehaviour
     {
         if(other.collider.tag=="Player" && Input.GetKey(KeyCode.F) && timeron == false)
         {
+            i++;
+            if (i >= 4)
+            {
+                i = 0;
+            }
+            gameObject.tag = NESW[i];
             timeron = true;
-            if (gameObject.tag == "North")
-            {
-                Debug.Log("got here");
-                gameObject.tag = "East";
-            }
-            if (gameObject.tag == "East")
-            {
-                gameObject.tag = "South";
-            }
-            if (gameObject.tag == "South")
-            {
-                gameObject.tag = "West";
-            }
-            if (gameObject.tag == "West")
-            {
-                gameObject.tag = "North";
-            }
+           
+          
         }
     }
 }

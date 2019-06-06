@@ -181,7 +181,7 @@ public class Pickup : MonoBehaviour
             animator.SetBool("up", false);
             animator.SetBool("down", false);
         }
-        if (Input.GetKey(KeyCode.D))
+      else  if (Input.GetKey(KeyCode.D))
         {
             facing = "Right";
             animator.SetBool("left", false);
@@ -189,7 +189,7 @@ public class Pickup : MonoBehaviour
             animator.SetBool("up", false);
             animator.SetBool("down", false);
         }
-        if (Input.GetKey(KeyCode.W))
+       else if (Input.GetKey(KeyCode.W))
         {
             facing = "Up";
             animator.SetBool("left", false);
@@ -197,7 +197,7 @@ public class Pickup : MonoBehaviour
             animator.SetBool("up", true);
             animator.SetBool("down", false);
         }
-        if (Input.GetKey(KeyCode.S))
+       else if (Input.GetKey(KeyCode.S))
         {
             facing = "Down";
             animator.SetBool("left", false);
@@ -205,7 +205,7 @@ public class Pickup : MonoBehaviour
             animator.SetBool("up", false);
             animator.SetBool("down", true);
         }
-        if (Input.anyKey == false)
+       else if (Input.anyKey == false)
         {
             animator.SetBool("left", false);
             animator.SetBool("right", false);
