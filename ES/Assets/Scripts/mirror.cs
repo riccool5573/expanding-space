@@ -25,7 +25,7 @@ public class mirror : MonoBehaviour
         if (timer <= 0)
         {
             timeron = false;
-            timer = 1.0f;
+            timer = 0.2f;
         }
     }
     // Update is called once per frame

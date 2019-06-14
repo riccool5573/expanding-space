@@ -10,11 +10,12 @@ public class lightpuzzle : MonoBehaviour
     private bool west;
     private bool exists;
     private TrailRenderer tr;
+    public GameObject spritemaskhorizontal;
+    public GameObject spritemaskvertical;
     // Start is called before the first frame update
     void Start()
     {
         east = true;
-
         tr = GetComponent<TrailRenderer>();
 
 
@@ -23,6 +24,18 @@ public class lightpuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
+        if (true)
+        {
+            if (east || west)
+            {
+                Instantiate(spritemaskhorizontal, new Vector3(transform.position.x, transform.position.y), Quaternion.identity);
+            }
+            if (north || south)
+            {
+                Instantiate(spritemaskvertical, new Vector3(transform.position.x, transform.position.y), Quaternion.identity);
+            }
+        }
         GameObject go = GameObject.Find("Altar");
         Altar cs = go.GetComponent<Altar>();
         exists = cs.on;
@@ -30,19 +43,23 @@ public class lightpuzzle : MonoBehaviour
         {
             transform.localPosition += new Vector3(0, 0.2f, 0);
         }
-        if (south)
+       else if (south)
         {
             transform.localPosition += new Vector3(0, -0.2f, 0);
         }
-        if (east)
+        else if (east)
         {
             transform.localPosition += new Vector3(0.2f, 0, 0);
         }
-        if (west)
+       else if (west)
         {
             transform.localPosition += new Vector3(-0.2f, 0, 0);
         }
-        if(exists == false)
+        else
+        {
+            transform.localPosition += new Vector3(0, 0, 0);
+        }
+        if (exists == false)
         {
             Destroy(this);
             tr.Clear();

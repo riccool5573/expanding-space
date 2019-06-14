@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\camerashake.cs" />
     <Compile Include="Assets\Scripts\Altar.cs" />
     <Compile Include="Assets\Scripts\button.cs" />
     <Compile Include="Assets\Scripts\camera.cs" />
@@ -71,6 +72,8 @@
     <Compile Include="Assets\Scripts\holder.cs" />
     <Compile Include="Assets\Scripts\LightButton.cs" />
     <Compile Include="Assets\Scripts\LightDoor.cs" />
+    <Compile Include="Assets\Scripts\lightdoorup.cs" />
+    <Compile Include="Assets\Scripts\LightMask.cs" />
     <Compile Include="Assets\Scripts\lightpuzzle.cs" />
     <Compile Include="Assets\Scripts\mirror.cs" />
     <Compile Include="Assets\Scripts\movement.cs" />

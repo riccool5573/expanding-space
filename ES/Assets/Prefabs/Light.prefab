@@ -51,7 +51,7 @@ TrailRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 1
-  m_RendererPriority: 0
+  m_RendererPriority: 83
   m_Materials:
   - {fileID: 2100000, guid: 235bd84d2a81c41c19c477c7ee90ff88, type: 2}
   m_StaticBatchInfo:
@@ -76,7 +76,7 @@ TrailRenderer:
   m_Time: Infinity
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.75
+    widthMultiplier: 0.4
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -200,3 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e69e325de74d4a66a51f9debb289579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spritemaskhorizontal: {fileID: 98163120200335565, guid: c8771322fbbde4a77b2b8133f802dc65,
+    type: 3}
+  spritemaskvertical: {fileID: 7697366195543353766, guid: 90a5ab4b3650140fd9cf1d2470c6f192,
+    type: 3}

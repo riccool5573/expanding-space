@@ -25,9 +25,9 @@ public class Altar : MonoBehaviour
             {
                 if (on == false)
                 {
-                    Debug.Log("got here");
+                   
                     on = true;
-                    Instantiate(Light, new Vector3(transform.position.x - 1, transform.position.y + 0.5f), Quaternion.identity);
+                    Instantiate(Light, new Vector3(transform.position.x + 1.3f, transform.position.y + 0.5f), Quaternion.identity);
                 }
                 else
                 {
